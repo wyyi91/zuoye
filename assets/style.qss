@@ -1,0 +1,95 @@
+/* PID温度控制仿真系统 - 全局样式表 */
+
+QMainWindow {
+    background-color: #f0f0f0;
+}
+
+QGroupBox {
+    font-weight: bold;
+    border: 1px solid #c0c0c0;
+    border-radius: 4px;
+    margin-top: 12px;
+    padding-top: 8px;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 5px;
+}
+
+QPushButton {
+    padding: 4px 12px;
+    border: 1px solid #b0b0b0;
+    border-radius: 3px;
+    background-color: #e8e8e8;
+}
+
+QPushButton:hover {
+    background-color: #d0d0d0;
+}
+
+QPushButton:pressed {
+    background-color: #c0c0c0;
+}
+
+QPushButton:disabled {
+    background-color: #e0e0e0;
+    color: #a0a0a0;
+}
+
+QLineEdit {
+    padding: 4px;
+    border: 1px solid #c0c0c0;
+    border-radius: 3px;
+    background: white;
+}
+
+QLineEdit:focus {
+    border-color: #4a90d9;
+}
+
+QComboBox {
+    padding: 4px;
+    border: 1px solid #c0c0c0;
+    border-radius: 3px;
+    background: white;
+}
+
+QDoubleSpinBox {
+    padding: 4px;
+    border: 1px solid #c0c0c0;
+    border-radius: 3px;
+    background: white;
+}
+
+QTabWidget::pane {
+    border: 1px solid #c0c0c0;
+    border-radius: 3px;
+}
+
+QTableWidget {
+    gridline-color: #d0d0d0;
+    selection-background-color: #4a90d9;
+    selection-color: white;
+}
+
+QStatusBar {
+    background-color: #e0e0e0;
+    border-top: 1px solid #c0c0c0;
+}
+
+QMenuBar {
+    background-color: #e8e8e8;
+    border-bottom: 1px solid #c0c0c0;
+}
+
+QMenu {
+    background-color: white;
+    border: 1px solid #c0c0c0;
+}
+
+QMenu::item:selected {
+    background-color: #4a90d9;
+    color: white;
+}

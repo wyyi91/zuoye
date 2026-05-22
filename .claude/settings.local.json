@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python tests/test_model.py)",
+      "Bash(python tests/test_disturbance.py)",
+      "Bash(python tests/test_pid.py)",
+      "Bash(py -3 --version)",
+      "Bash(python3 tests/test_model.py)"
+    ]
+  }
+}
