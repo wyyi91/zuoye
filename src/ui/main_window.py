@@ -227,11 +227,25 @@ class MainWindow(QMainWindow):
         values_layout = QGridLayout(values_group)
         values_layout.setSpacing(4)
         self._pv_label = QLabel("0.00")
-        self._pv_label.setStyleSheet("font-size: 16px; font-weight: bold; color: green;")
+        self._pv_label.setStyleSheet(
+            "font-size: 18px; font-weight: bold; color: #00cc00;"
+            "background: #1a1a2e; padding: 4px 8px; border-radius: 3px;"
+        )
         self._u_label = QLabel("0.00")
-        self._u_label.setStyleSheet("font-size: 16px; font-weight: bold; color: blue;")
+        self._u_label.setStyleSheet(
+            "font-size: 18px; font-weight: bold; color: #44aaff;"
+            "background: #1a1a2e; padding: 4px 8px; border-radius: 3px;"
+        )
         self._error_label = QLabel("0.00")
+        self._error_label.setStyleSheet(
+            "font-size: 18px; font-weight: bold; color: #ff6644;"
+            "background: #1a1a2e; padding: 4px 8px; border-radius: 3px;"
+        )
         self._dist_status_label = QLabel("无干扰")
+        self._dist_status_label.setStyleSheet(
+            "font-size: 14px; font-weight: bold; color: #cc88ff;"
+            "background: #1a1a2e; padding: 4px 8px; border-radius: 3px;"
+        )
 
         values_layout.addWidget(QLabel("PV:"), 0, 0)
         values_layout.addWidget(self._pv_label, 0, 1)

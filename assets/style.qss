@@ -1,95 +1,271 @@
-/* PID温度控制仿真系统 - 全局样式表 */
+/* PID温度控制仿真系统 - 全局样式表（高对比度醒目版） */
 
-QMainWindow {
-    background-color: #f0f0f0;
+/* ===== 全局默认 ===== */
+* {
+    font-size: 13px;
+    color: #1a1a1a;
 }
 
+QMainWindow {
+    background-color: #f5f5f5;
+}
+
+/* ===== QLabel ===== */
+QLabel {
+    color: #222222;
+    font-weight: normal;
+}
+
+/* ===== QGroupBox ===== */
 QGroupBox {
     font-weight: bold;
-    border: 1px solid #c0c0c0;
-    border-radius: 4px;
-    margin-top: 12px;
-    padding-top: 8px;
+    font-size: 14px;
+    color: #1a3a5c;
+    border: 2px solid #4a90d9;
+    border-radius: 6px;
+    margin-top: 14px;
+    padding-top: 10px;
 }
 
 QGroupBox::title {
     subcontrol-origin: margin;
-    left: 10px;
-    padding: 0 5px;
+    left: 12px;
+    padding: 0 6px;
+    color: #1a5276;
+    font-size: 14px;
+    font-weight: bold;
 }
 
+/* ===== QPushButton ===== */
 QPushButton {
-    padding: 4px 12px;
-    border: 1px solid #b0b0b0;
-    border-radius: 3px;
-    background-color: #e8e8e8;
+    padding: 5px 14px;
+    border: 2px solid #7f8c8d;
+    border-radius: 4px;
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    font-weight: bold;
+    font-size: 13px;
 }
 
 QPushButton:hover {
-    background-color: #d0d0d0;
+    background-color: #3498db;
+    color: white;
+    border-color: #2980b9;
 }
 
 QPushButton:pressed {
-    background-color: #c0c0c0;
+    background-color: #2471a3;
+    color: white;
+    border-color: #1a5276;
 }
 
 QPushButton:disabled {
-    background-color: #e0e0e0;
-    color: #a0a0a0;
+    background-color: #d5dbdb;
+    color: #95a5a6;
+    border-color: #bdc3c7;
 }
 
+/* ===== QLineEdit ===== */
 QLineEdit {
-    padding: 4px;
-    border: 1px solid #c0c0c0;
-    border-radius: 3px;
+    padding: 5px;
+    border: 2px solid #b0b0b0;
+    border-radius: 4px;
     background: white;
+    color: #1a1a1a;
+    font-size: 13px;
 }
 
 QLineEdit:focus {
-    border-color: #4a90d9;
+    border-color: #e74c3c;
+    border-width: 2px;
 }
 
+/* ===== QComboBox ===== */
 QComboBox {
-    padding: 4px;
-    border: 1px solid #c0c0c0;
-    border-radius: 3px;
+    padding: 5px;
+    border: 2px solid #b0b0b0;
+    border-radius: 4px;
     background: white;
+    color: #1a1a1a;
+    font-size: 13px;
+    font-weight: bold;
 }
 
-QDoubleSpinBox {
-    padding: 4px;
-    border: 1px solid #c0c0c0;
-    border-radius: 3px;
+QComboBox:hover {
+    border-color: #3498db;
+}
+
+QComboBox QAbstractItemView {
     background: white;
-}
-
-QTabWidget::pane {
-    border: 1px solid #c0c0c0;
-    border-radius: 3px;
-}
-
-QTableWidget {
-    gridline-color: #d0d0d0;
-    selection-background-color: #4a90d9;
+    color: #1a1a1a;
+    selection-background-color: #3498db;
     selection-color: white;
+    font-size: 13px;
 }
 
+/* ===== QDoubleSpinBox ===== */
+QDoubleSpinBox {
+    padding: 5px;
+    border: 2px solid #b0b0b0;
+    border-radius: 4px;
+    background: white;
+    color: #1a1a1a;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+QDoubleSpinBox:focus {
+    border-color: #e74c3c;
+}
+
+/* ===== QTabWidget ===== */
+QTabWidget::pane {
+    border: 2px solid #4a90d9;
+    border-radius: 4px;
+    background: white;
+}
+
+QTabBar::tab {
+    background: #d5dbdb;
+    color: #2c3e50;
+    padding: 6px 16px;
+    border: 1px solid #bdc3c7;
+    border-bottom: none;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    font-weight: bold;
+    font-size: 13px;
+    margin-right: 2px;
+}
+
+QTabBar::tab:selected {
+    background: white;
+    color: #1a5276;
+    border-color: #4a90d9;
+    border-bottom: 2px solid white;
+    font-size: 14px;
+}
+
+QTabBar::tab:hover:!selected {
+    background: #3498db;
+    color: white;
+}
+
+/* ===== QTableWidget ===== */
+QTableWidget {
+    gridline-color: #c8c8c8;
+    background: white;
+    color: #1a1a1a;
+    font-size: 13px;
+}
+
+QTableWidget::item:selected {
+    background-color: #3498db;
+    color: white;
+}
+
+QHeaderView::section {
+    background-color: #2c3e50;
+    color: white;
+    padding: 5px;
+    border: 1px solid #1a252f;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+/* ===== QStatusBar ===== */
 QStatusBar {
-    background-color: #e0e0e0;
-    border-top: 1px solid #c0c0c0;
+    background-color: #2c3e50;
+    border-top: 2px solid #1a252f;
+    color: #ecf0f1;
+    font-weight: bold;
+    font-size: 13px;
 }
 
+QStatusBar QLabel {
+    color: #ecf0f1;
+    font-weight: bold;
+    padding: 0 8px;
+}
+
+/* ===== QMenuBar & QMenu ===== */
 QMenuBar {
-    background-color: #e8e8e8;
-    border-bottom: 1px solid #c0c0c0;
+    background-color: #2c3e50;
+    border-bottom: 2px solid #1a252f;
+    color: #ecf0f1;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 2px;
+}
+
+QMenuBar::item {
+    padding: 4px 12px;
+    color: #ecf0f1;
+    background: transparent;
+    border-radius: 3px;
+}
+
+QMenuBar::item:selected {
+    background-color: #3498db;
+    color: white;
 }
 
 QMenu {
     background-color: white;
-    border: 1px solid #c0c0c0;
+    border: 2px solid #3498db;
+    border-radius: 4px;
+    padding: 4px;
+    color: #2c3e50;
+}
+
+QMenu::item {
+    padding: 6px 28px 6px 16px;
+    color: #2c3e50;
+    font-size: 13px;
 }
 
 QMenu::item:selected {
-    background-color: #4a90d9;
+    background-color: #3498db;
     color: white;
+    border-radius: 2px;
+}
+
+/* ===== QMessageBox ===== */
+QMessageBox QLabel {
+    color: #1a1a1a;
+    font-size: 14px;
+}
+
+/* ===== QScrollBar ===== */
+QScrollBar:horizontal, QScrollBar:vertical {
+    background: #ecf0f1;
+    border: 1px solid #bdc3c7;
+}
+
+QScrollBar::handle:horizontal, QScrollBar::handle:vertical {
+    background: #95a5a6;
+    border-radius: 3px;
+    min-height: 20px;
+}
+
+QScrollBar::handle:horizontal:hover, QScrollBar::handle:vertical:hover {
+    background: #3498db;
+}
+
+/* ===== QSplitter ===== */
+QSplitter::handle {
+    background: #bdc3c7;
+}
+
+QSplitter::handle:hover {
+    background: #3498db;
+}
+
+/* ===== QToolTip ===== */
+QToolTip {
+    background: #2c3e50;
+    color: #ecf0f1;
+    border: 1px solid #1a252f;
+    padding: 4px;
+    font-size: 12px;
 }

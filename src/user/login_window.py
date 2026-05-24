@@ -86,7 +86,7 @@ class LoginWindow(QDialog):
         # 提示信息
         hint = QLabel("默认账号: admin/admin123  或  user/user123")
         hint.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        hint.setStyleSheet("color: gray; font-size: 10px;")
+        hint.setStyleSheet("color: #555555; font-size: 12px; font-weight: bold;")
         layout.addWidget(hint)
 
         self._user_id_edit.setFocus()
@@ -116,29 +116,41 @@ class LoginWindow(QDialog):
     def _apply_style(self):
         self.setStyleSheet("""
             QDialog {
-                background-color: #f5f5f5;
+                background-color: #eef2f7;
+            }
+            QLabel {
+                color: #1a1a2e;
+                font-size: 13px;
             }
             QLineEdit {
-                padding: 6px;
-                border: 1px solid #c0c0c0;
-                border-radius: 3px;
+                padding: 7px;
+                border: 2px solid #888;
+                border-radius: 4px;
                 background: white;
-            }
-            QLineEdit:focus {
-                border-color: #4a90d9;
-            }
-            QPushButton {
-                background-color: #4a90d9;
-                color: white;
-                border: none;
-                border-radius: 3px;
+                color: #1a1a1a;
                 font-size: 14px;
             }
+            QLineEdit:focus {
+                border-color: #e74c3c;
+                border-width: 2px;
+            }
+            QPushButton {
+                background-color: #e74c3c;
+                color: white;
+                border: none;
+                border-radius: 4px;
+                font-size: 15px;
+                font-weight: bold;
+            }
             QPushButton:hover {
-                background-color: #357abd;
+                background-color: #c0392b;
             }
             QPushButton:pressed {
-                background-color: #2a5f9e;
+                background-color: #a93226;
+            }
+            QCheckBox {
+                color: #333;
+                font-size: 12px;
             }
         """)
 

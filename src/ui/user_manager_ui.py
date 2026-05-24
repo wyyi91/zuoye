@@ -52,7 +52,9 @@ class AddUserDialog(QDialog):
         btn_layout.addWidget(cancel_btn)
 
         ok_btn = QPushButton("添加")
-        ok_btn.setStyleSheet("background-color: #4a90d9; color: white;")
+        ok_btn.setStyleSheet(
+            "background-color: #e74c3c; color: white; font-weight: bold; font-size: 13px;"
+        )
         ok_btn.clicked.connect(self._on_ok)
         btn_layout.addWidget(ok_btn)
         layout.addLayout(btn_layout)
@@ -106,7 +108,7 @@ class UserManagerWindow(QMainWindow):
         btn_layout.addWidget(reset_pwd_btn)
 
         delete_btn = QPushButton("删除用户")
-        delete_btn.setStyleSheet("color: #e74c3c;")
+        delete_btn.setStyleSheet("color: #e74c3c; font-weight: bold; font-size: 14px;")
         delete_btn.clicked.connect(self._delete_user)
         btn_layout.addWidget(delete_btn)
 

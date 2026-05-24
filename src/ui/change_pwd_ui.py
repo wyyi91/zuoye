@@ -56,7 +56,9 @@ class ChangePasswordDialog(QDialog):
 
         self._ok_btn = QPushButton("确认修改")
         self._ok_btn.clicked.connect(self._on_confirm)
-        self._ok_btn.setStyleSheet("background-color: #4a90d9; color: white;")
+        self._ok_btn.setStyleSheet(
+            "background-color: #e74c3c; color: white; font-weight: bold; font-size: 13px;"
+        )
         btn_layout.addWidget(self._ok_btn)
 
         layout.addLayout(btn_layout)

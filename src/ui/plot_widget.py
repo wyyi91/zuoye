@@ -37,11 +37,11 @@ class PlotWidget(QWidget):
         self._plot_widget.showGrid(x=True, y=True, alpha=0.3)
         self._plot_widget.addLegend()
 
-        pen_sv = pg.mkPen(color=(255, 0, 0), width=2)
-        pen_pv = pg.mkPen(color=(0, 200, 0), width=2)
-        pen_u = pg.mkPen(color=(0, 100, 255), width=2)
-        pen_dist = pg.mkPen(color=(160, 0, 200), width=1.5, style=DASH_LINE)
-        pen_err = pg.mkPen(color=(0, 180, 180), width=1.5, style=DASH_DOT_LINE)
+        pen_sv = pg.mkPen(color=(255, 40, 40), width=2.5)
+        pen_pv = pg.mkPen(color=(0, 255, 60), width=2.5)
+        pen_u = pg.mkPen(color=(50, 150, 255), width=2.5)
+        pen_dist = pg.mkPen(color=(220, 30, 255), width=2, style=DASH_LINE)
+        pen_err = pg.mkPen(color=(0, 255, 200), width=2, style=DASH_DOT_LINE)
 
         self._curve_sv = self._plot_widget.plot([], [], pen=pen_sv, name="SV")
         self._curve_pv = self._plot_widget.plot([], [], pen=pen_pv, name="PV")
@@ -108,11 +108,11 @@ class HistoryPlotWidget(QWidget):
         self._plot.showGrid(x=True, y=True, alpha=0.3)
         self._plot.addLegend()
 
-        pen_sv = pg.mkPen(color=(255, 0, 0), width=2)
-        pen_pv = pg.mkPen(color=(0, 200, 0), width=2)
-        pen_u = pg.mkPen(color=(0, 100, 255), width=2)
-        pen_dist = pg.mkPen(color=(160, 0, 200), width=1.5, style=DASH_LINE)
-        pen_err = pg.mkPen(color=(0, 180, 180), width=1.5, style=DASH_DOT_LINE)
+        pen_sv = pg.mkPen(color=(255, 40, 40), width=2.5)
+        pen_pv = pg.mkPen(color=(0, 255, 60), width=2.5)
+        pen_u = pg.mkPen(color=(50, 150, 255), width=2.5)
+        pen_dist = pg.mkPen(color=(220, 30, 255), width=2, style=DASH_LINE)
+        pen_err = pg.mkPen(color=(0, 255, 200), width=2, style=DASH_DOT_LINE)
 
         self._curve_sv = self._plot.plot([], [], pen=pen_sv, name="SV")
         self._curve_pv = self._plot.plot([], [], pen=pen_pv, name="PV")

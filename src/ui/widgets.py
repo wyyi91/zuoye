@@ -127,11 +127,15 @@ class ControlPanel(QGroupBox):
         # 控制按钮行
         btn_layout = QHBoxLayout()
         self._start_btn = QPushButton("开始仿真")
-        self._start_btn.setStyleSheet("background-color: #27ae60; color: white;")
+        self._start_btn.setStyleSheet(
+            "background-color: #27ae60; color: white; font-weight: bold; font-size: 14px;"
+        )
         self._pause_btn = QPushButton("暂停")
         self._pause_btn.setCheckable(True)
         self._stop_btn = QPushButton("停止")
-        self._stop_btn.setStyleSheet("background-color: #e74c3c; color: white;")
+        self._stop_btn.setStyleSheet(
+            "background-color: #e74c3c; color: white; font-weight: bold; font-size: 14px;"
+        )
         btn_layout.addWidget(self._start_btn)
         btn_layout.addWidget(self._pause_btn)
         btn_layout.addWidget(self._stop_btn)

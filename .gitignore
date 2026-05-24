@@ -17,3 +17,5 @@ env/
 
 # Logs and runtime data
 *.log
+data/
+dist/data/

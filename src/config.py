@@ -11,8 +11,11 @@ import os
 class Paths:
     if getattr(sys, "frozen", False):
         BASE_DIR = os.path.dirname(sys.executable)
+        # PyInstaller onefile: bundled read-only assets extracted to _MEIPASS
+        ASSETS_SRC = os.path.join(getattr(sys, "_MEIPASS", BASE_DIR), "assets")
     else:
         BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        ASSETS_SRC = os.path.join(BASE_DIR, "assets")
 
     DATA_DIR = os.path.join(BASE_DIR, "data")
     HISTORY_DIR = os.path.join(DATA_DIR, "history_data")
@@ -22,8 +25,7 @@ class Paths:
     USERS_FILE = os.path.join(USERS_DIR, "users.json")
     ERROR_LOG = os.path.join(LOGS_DIR, "error.log")
 
-    ASSETS_DIR = os.path.join(BASE_DIR, "assets")
-    STYLE_QSS = os.path.join(ASSETS_DIR, "style.qss")
+    STYLE_QSS = os.path.join(ASSETS_SRC, "style.qss")
 
     @classmethod
     def ensure_dirs(cls):
