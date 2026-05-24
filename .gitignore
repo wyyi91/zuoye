@@ -1,0 +1,19 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# PyInstaller build artifacts
+build/
+
+# Windows files
+Thumbs.db
+.DS_Store
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Logs and runtime data
+*.log
